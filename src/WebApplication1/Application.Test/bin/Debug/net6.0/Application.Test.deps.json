@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "TestProject1/1.0.0": {
+      "Application.Test/1.0.0": {
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "16.11.0",
           "coverlet.collector": "3.1.0",
@@ -14,7 +14,7 @@
           "xunit.runner.visualstudio": "2.4.3"
         },
         "runtime": {
-          "TestProject1.dll": {}
+          "Application.Test.dll": {}
         }
       },
       "coverlet.collector/3.1.0": {},
@@ -1092,7 +1092,7 @@
     }
   },
   "libraries": {
-    "TestProject1/1.0.0": {
+    "Application.Test/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

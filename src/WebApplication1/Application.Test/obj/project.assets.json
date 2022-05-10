@@ -5978,11 +5978,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\WebApplication1\\TestProject1\\TestProject1.csproj",
-      "projectName": "TestProject1",
-      "projectPath": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\WebApplication1\\TestProject1\\TestProject1.csproj",
+      "projectUniqueName": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\WebApplication1\\Application.Test\\Application.Test.csproj",
+      "projectName": "Application.Test",
+      "projectPath": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\WebApplication1\\Application.Test\\Application.Test.csproj",
       "packagesPath": "C:\\Users\\huy.huynhducquang\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\WebApplication1\\TestProject1\\obj\\",
+      "outputPath": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\WebApplication1\\Application.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\huy.huynhducquang\\AppData\\Roaming\\NuGet\\NuGet.Config",
