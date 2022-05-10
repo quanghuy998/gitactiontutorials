@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Commands\Orders\PlaceCustomerOrder\**" />
+    <EmbeddedResource Remove="Commands\Orders\PlaceCustomerOrder\**" />
+    <None Remove="Commands\Orders\PlaceCustomerOrder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EcommerceProject.Domain\EcommerceProject.Domain.csproj" />
+    <ProjectReference Include="..\EcommerceProject.Infrastructure\EcommerceProject.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
