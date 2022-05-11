@@ -36,5 +36,5 @@ jobs:
       working-directory: tests/TestOnlineProject.Test
 
     - name: Start containers
-      working-directory: src/docker-compose.yml
-      run: docker-compose up -d
+      working-directory: src
+      run: docker-compose -f "docker-compose.yml" up -d --build
