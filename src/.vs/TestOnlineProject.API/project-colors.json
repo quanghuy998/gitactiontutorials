@@ -25,7 +25,17 @@
       "ProjectGuid": "a3fbe96d-c4c1-457f-9da6-e8c3eb2df3be",
       "DisplayName": "TestOnlineProejct.DomainTest",
       "ColorIndex": 3
+    },
+    "5a2ea2fd-d37b-413a-a347-af2c83d0d3ff": {
+      "ProjectGuid": "5a2ea2fd-d37b-413a-a347-af2c83d0d3ff",
+      "DisplayName": "TestOnlineProject.Test",
+      "ColorIndex": 4
+    },
+    "854233e7-4294-4615-a5d0-9e6723b6d236": {
+      "ProjectGuid": "854233e7-4294-4615-a5d0-9e6723b6d236",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 6
 }

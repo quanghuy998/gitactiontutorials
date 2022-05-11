@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "gZ6FdsBBYkIdA9mETxGMsjJ42xpkGZB1ygVFWeU6wTY=",
+  "Source": "TestOnlineProject.API",
+  "BasePath": "_content/TestOnlineProject.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
