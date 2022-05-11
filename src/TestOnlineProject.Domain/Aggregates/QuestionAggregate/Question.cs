@@ -5,11 +5,11 @@ namespace TestOnlineProject.Domain.Aggregates.QuestionAggregate
 {
     public class Question : AggregateRoot<Guid>
     {
-        public string QuestionText { get; }
-        public int Point { get; }
-        public QuestionType QuestionType { get; }
-        List<Choice> Choices { get; }
-        List<Exam> Exams { get; }
+        public string QuestionText { get; private set; }
+        public QuestionType QuestionType { get; private set; }
+        public int Point { get; private set; }
+        public List<Choice> Choices { get; }
+        public List<Exam> Exams { get; }
 
         private Question()
         {
@@ -25,9 +25,22 @@ namespace TestOnlineProject.Domain.Aggregates.QuestionAggregate
             Exams = new();
         }
 
-        public void AddChoice(Choice choice)
+        public void UpdateQuestion(string questionText, QuestionType questionType, int point)
         {
-            Choices.Add(choice);
+            QuestionText = questionText;
+            QuestionType = questionType;
+            Point = point;
+        }
+
+        public void AddChoice(Choice request)
+        {
+            Choices.Add(request);
+        }
+        
+        public void RemoveChoice(Choice request)
+        {
+            var choice = Choices.Find(x => x.Id == request.Id);
+            Choices.Remove(choice);
         }
     }
 }

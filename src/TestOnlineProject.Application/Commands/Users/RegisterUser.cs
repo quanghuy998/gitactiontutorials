@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TestOnlineProject.Domain.Aggregates.RoleAggregate;
+﻿using TestOnlineProject.Domain.Aggregates.RoleAggregate;
 using TestOnlineProject.Domain.Aggregates.UserAggregate;
 using TestOnlineProject.Domain.SeedWork;
 using TestOnlineProject.Infrastructure.CQRS.Commands;
@@ -22,11 +17,13 @@ namespace TestOnlineProject.Application.Commands.Users
     {
         private readonly IUserRepository _userRepository;
         private readonly IRoleRepository _roleRepository;
+
         public RegisterUserHandler(IUserRepository userRepository, IRoleRepository roleRepository)
         {
             _userRepository = userRepository;
             _roleRepository = roleRepository;
         }
+
         public async Task<CommandResult> Handle(RegisterUserCommand request, CancellationToken cancellationToken)
         {
             var spec = new BaseSpecification<User>(x => x.UserName == request.UserName);

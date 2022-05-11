@@ -13,6 +13,7 @@ namespace TestOnlineProject.Domain.Aggregates.UserAggregate
 
         private User()
         {
+
         }
 
         public User(string name, string userName, string email, Role role)

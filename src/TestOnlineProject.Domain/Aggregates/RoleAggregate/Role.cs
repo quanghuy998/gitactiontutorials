@@ -8,6 +8,7 @@ namespace TestOnlineProject.Domain.Aggregates.RoleAggregate
 
         private Role()
         {
+
         }
 
         public Role(string name)

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TestOnlineProject.Domain.Aggregates.RoleAggregate;
+﻿using TestOnlineProject.Domain.Aggregates.RoleAggregate;
 using TestOnlineProject.Domain.Aggregates.UserAggregate;
 
 namespace TestOnlineProject.Infrastructure.Database
@@ -23,6 +18,7 @@ namespace TestOnlineProject.Infrastructure.Database
                 dbContext.SaveChanges();
             }
         }
+
         public static List<Role> CreateInitializeRoles()
         {
             return new List<Role>

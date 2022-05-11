@@ -1,12 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
 using TestOnlineProject.Domain.Aggregates.UserAggregate;
 using TestOnlineProject.Domain.SeedWork;
 using TestOnlineProject.Infrastructure.CQRS.Queries;
@@ -54,6 +50,7 @@ namespace TestOnlineProject.Application.Queries.Users
                 expires: DateTime.Now.AddHours(3),
                 signingCredentials: creds);
             var JwTToken = new JwtSecurityTokenHandler().WriteToken(token);
+
             return JwTToken;
         }
     }

@@ -5,15 +5,15 @@ namespace TestOnlineProject.Domain.Aggregates.ExamAggregate
 {
     public class Exam : AggregateRoot<Guid>
     {
-        public string Title { get; }
-        public DateTime ModifiedDate { get; }
-        List<Question> Questions { get; }
+        public string Title { get; private set; }
+        public DateTime ModifiedDate { get; private set; }
+        public List<Question> Questions { get; }
 
         private Exam()
         {
 
         }
-
+        
         public Exam(string title)
         {
             Title = title;
@@ -21,9 +21,21 @@ namespace TestOnlineProject.Domain.Aggregates.ExamAggregate
             Questions = new();
         }
 
-        public void AddQuestion(Question question)
+        public void UpdateExam(string title)
         {
-            Questions.Add(question);
+            Title = title;
+            ModifiedDate = DateTime.Now;
+        }
+
+        public void AddQuestion(Question request)
+        {
+            Questions.Add(request);
+        }
+
+        public void RemoveQuestion(Guid questionId)
+        {
+            var question = Questions.Find(x => x.Id == questionId);
+            Questions.Remove(question);
         }
     }
 }
