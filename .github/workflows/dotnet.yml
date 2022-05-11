@@ -46,7 +46,7 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-        
+
     - name: Start containers
       working-directory: src
-      run: docker-compose -f "docker-compose.yml" up -d --build
+      run: docker-compose up -d
