@@ -4,11 +4,11 @@ on: [push]
 
 jobs:
   build:
-
+    name: Dotnet Side by Side testing sample
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
+      - name: Check out branch main
+        uses: actions/checkout@v3
 
       - name: Setup .NET Core SDK 6.0.x
         uses: actions/setup-dotnet@v2
