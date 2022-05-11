@@ -1,10 +1,9 @@
 name: Test online build
 
 on:
-   push:
-    paths:
-    - 'src/**'
-    - 'tests/**'
+  push:
+    branches: [ main ]
+  pull_request:
     branches: [ main ]
 
 jobs:
@@ -12,18 +11,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Get code from the repository
-      uses: actions/checkout@v1
+      uses: actions/checkout@v3
       with:
         ref: main
 
     - name: Install .NET Core
-        uses: actions/setup-dotnet@v2
-        with:
-          dotnet-version: 6.0.x
-      - name: Install dependencies
-        run: dotnet restore
-      - name: Build
-        run: dotnet build --configuration Release --no-restore
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 6.0.x
+        
+    - name: Install dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
 
     - name: Run unit tests
       run: dotnet test tests/*.Tests/*.csproj
