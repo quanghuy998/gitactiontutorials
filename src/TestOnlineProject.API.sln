@@ -15,12 +15,7 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2DE0C5A9-AF6B-4DA8-B921-4BC3E8A9F749}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestOnlineProject.Test", "..\TestOnlineProject.Test\TestOnlineProject.Test.csproj", "{5A2EA2FD-D37B-413A-A347-AF2C83D0D3FF}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{854233E7-4294-4615-A5D0-9E6723B6D236}"
-	ProjectSection(SolutionItems) = preProject
-		..\.github\workflows\ci.yml = ..\.github\workflows\ci.yml
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestOnlineProject.Test", "..\TestOnlineProject.Test\TestOnlineProject.Test.csproj", "{5A2EA2FD-D37B-413A-A347-AF2C83D0D3FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
