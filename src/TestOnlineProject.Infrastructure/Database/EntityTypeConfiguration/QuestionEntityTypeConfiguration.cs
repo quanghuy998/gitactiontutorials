@@ -10,11 +10,19 @@ namespace TestOnlineProject.Infrastructure.Database.EntityTypeConfiguration
         {
             builder.ToTable("Question");
             builder.HasKey(p => p.Id);
-            builder.HasMany(p => p.Choices).WithOne();
 
             builder.Property(p => p.QuestionText).HasColumnName("QuestionText");
             builder.Property(p => p.QuestionType).HasColumnName("QuestionType");
             builder.Property(p => p.Point).HasColumnName("Point");
+            builder.OwnsMany<Choice>(p => p.Choices, x =>
+            {
+                x.WithOwner();
+                x.ToTable("Choice");
+                x.HasKey(x => x.Id);
+
+                x.Property(p => p.ChoiceText).HasColumnName("ChoiceName");
+                x.Property(p => p.IsCorrect).HasColumnName("IsCorrect");
+            });
         }
     }
 }

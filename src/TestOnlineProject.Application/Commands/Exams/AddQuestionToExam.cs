@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TestOnlineProject.Domain.Aggregates.ExamAggregate;
+﻿using TestOnlineProject.Domain.Aggregates.ExamAggregate;
 using TestOnlineProject.Domain.Aggregates.QuestionAggregate;
 using TestOnlineProject.Infrastructure.CQRS.Commands;
 
@@ -13,9 +8,6 @@ namespace TestOnlineProject.Application.Commands.Exams
     {
         public Guid ExamId { get; init; }
         public Guid QuestionId { get; init; }
-        public string QuestionText { get; init; }
-        public QuestionType QuestionType { get; init; }
-        public int Point { get; init; }
     }
 
     public class AddQuestionToExamCommandHandler : ICommandHandler<AddQuestionToExamCommand>
@@ -35,10 +27,7 @@ namespace TestOnlineProject.Application.Commands.Exams
             if (exam == null) return CommandResult.Error("Exam does not exist.");
 
             var question = await _questionRepository.FindOneAsync(request.QuestionId, cancellationToken);
-            if(question == null)
-            {
-                question = new Question(request.QuestionText, request.Point, request.QuestionType);
-            }
+            if (question == null) CommandResult.Error("Question does not exist.");
 
             exam.AddQuestion(question);
             await _examRepository.SaveAsync(exam, cancellationToken);

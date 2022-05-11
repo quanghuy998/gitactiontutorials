@@ -1,12 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TestOnlineProject.Domain.Aggregates.QuestionAggregate;
+using TestOnlineProject.Infrastructure.CQRS.Commands;
 
 namespace TestOnlineProject.Application.Commands.Questions
 {
-    internal class CreateQuestion
+    public class CreateQuestionCommand : ICommand
     {
+        public string QuestionText { get; init; }
+        public QuestionType QuestionType { get; init; }
+        public int Point { get; init; }
+    }
+
+    public class CreateQuestionCommandHandler : ICommandHandler<CreateQuestionCommand>
+    {
+        private readonly IQuestionRepository _questionRepository;
+
+        public CreateQuestionCommandHandler(IQuestionRepository questionRepository)
+        {
+            _questionRepository = questionRepository;
+        }
+
+        public async Task<CommandResult> Handle(CreateQuestionCommand request, CancellationToken cancellationToken)
+        {
+            var question = new Question(request.QuestionText, request.Point, request.QuestionType);
+            await _questionRepository.AddAsync(question, cancellationToken);
+
+            return CommandResult.Success();
+        }
     }
 }

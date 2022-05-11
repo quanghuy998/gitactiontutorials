@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TestOnlineProject.Domain.Aggregates.ExamAggregate;
+﻿using TestOnlineProject.Domain.Aggregates.ExamAggregate;
 using TestOnlineProject.Domain.Aggregates.QuestionAggregate;
 using TestOnlineProject.Infrastructure.CQRS.Commands;
 
@@ -29,9 +24,6 @@ namespace TestOnlineProject.Application.Commands.Exams
         {
             var exam = await _examRepository.FindOneAsync(request.ExamId, cancellationToken);
             if (exam is null) return CommandResult.Error("Exam does not exist.");
-
-            var question = await _questionRepository.FindOneAsync(request.QuestionId);
-            if (question is null) return CommandResult.Error("Question does not exist.");
 
             var result = exam.Questions.Find(x => x.Id == request.QuestionId);
             if (result is null) return CommandResult.Error("Question does not exist in this exam.");

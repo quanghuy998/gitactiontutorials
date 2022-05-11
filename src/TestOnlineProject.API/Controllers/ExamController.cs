@@ -35,7 +35,7 @@ namespace TestOnlineProject.API.Controllers
         {
             var query = new GetExamDetailsQuery() { Id = id };
             var result = await _queryBus.SendAsync(query, cancellationToken);
-            if (result is null) return BadRequest();
+            if (result is null) return NotFound();
 
             return Ok(result);
         }
@@ -50,11 +50,14 @@ namespace TestOnlineProject.API.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateExam([FromBody] UpdateExamRequest request, CancellationToken cancellationToken)
+        [Route("{id}")]
+        public async Task<IActionResult> UpdateExam([FromRoute] Guid id,
+                                    [FromBody] UpdateExamRequest request, 
+                                    CancellationToken cancellationToken)
         {
             var command = new UpdateExamCommand()
             {
-                Id = request.id,
+                Id = id,
                 Title = request.title
             };
 
@@ -76,16 +79,15 @@ namespace TestOnlineProject.API.Controllers
         }
 
         [HttpPost]
-        [Route("add-question-to-exam")]
-        public async Task<IActionResult> AddQuestionToExam([FromBody] AddQuestionToExamRequest request, CancellationToken cancellationToken)
+        [Route("{examId}/questions/{questionId}")]
+        public async Task<IActionResult> AddQuestionToExam([FromRoute] Guid examId, 
+                                                [FromRoute] Guid questionId, 
+                                                CancellationToken cancellationToken)
         {
             var command = new AddQuestionToExamCommand()
             {
-                QuestionText = request.questionText,
-                ExamId = request.examId,
-                Point = request.point,
-                QuestionId = request.questionId,
-                QuestionType = request.questionType
+                ExamId = examId,
+                QuestionId = questionId,
             };
 
             var result = await _commandBus.SendAsync(command, cancellationToken);
@@ -95,13 +97,15 @@ namespace TestOnlineProject.API.Controllers
         }
 
         [HttpPut]
-        [Route("remove-question-from-exam")]
-        public async Task<IActionResult> RemoveQuestionFromExam([FromBody] RemoveQuestionFromExamRequest request, CancellationToken cancellationToken)
+        [Route("{examId}/questions/{questionId}")]
+        public async Task<IActionResult> RemoveQuestionFromExam([FromRoute] Guid examId,
+                                                [FromRoute] Guid questionId, 
+                                                CancellationToken cancellationToken)
         {
             var command = new RemoveQuestionFromExamCommand()
             {
-                ExamId = request.examId,
-                QuestionId = request.questionId
+                ExamId = examId,
+                QuestionId = questionId
             };
 
             var result = await _commandBus.SendAsync(command, cancellationToken);

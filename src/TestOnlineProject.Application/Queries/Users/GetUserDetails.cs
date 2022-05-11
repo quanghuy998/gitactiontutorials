@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TestOnlineProject.Domain.Aggregates.UserAggregate;
+﻿using TestOnlineProject.Domain.Aggregates.UserAggregate;
 using TestOnlineProject.Infrastructure.CQRS.Queries;
 
 namespace TestOnlineProject.Application.Queries.Users

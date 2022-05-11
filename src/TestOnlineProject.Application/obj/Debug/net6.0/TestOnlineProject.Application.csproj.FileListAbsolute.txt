@@ -15,3 +15,20 @@ C:\Users\huy.huynhducquang\Desktop\GitHub\gitactiontutorials\src\TestOnlineProje
 C:\Users\huy.huynhducquang\Desktop\GitHub\gitactiontutorials\src\TestOnlineProject.Application\obj\Debug\net6.0\TestOnlineProject.Application.dll
 C:\Users\huy.huynhducquang\Desktop\GitHub\gitactiontutorials\src\TestOnlineProject.Application\obj\Debug\net6.0\ref\TestOnlineProject.Application.dll
 C:\Users\huy.huynhducquang\Desktop\GitHub\gitactiontutorials\src\TestOnlineProject.Application\obj\Debug\net6.0\TestOnlineProject.Application.pdb
+C:\Users\ADMIN\OneDrive - Orient Software Development Corporation\Desktop\github\gitactiontutorials\src\TestOnlineProject.Application\bin\Debug\net6.0\TestOnlineProject.Application.deps.json
+C:\Users\ADMIN\OneDrive - Orient Software Development Corporation\Desktop\github\gitactiontutorials\src\TestOnlineProject.Application\bin\Debug\net6.0\TestOnlineProject.Application.dll
+C:\Users\ADMIN\OneDrive - Orient Software Development Corporation\Desktop\github\gitactiontutorials\src\TestOnlineProject.Application\bin\Debug\net6.0\TestOnlineProject.Application.pdb
+C:\Users\ADMIN\OneDrive - Orient Software Development Corporation\Desktop\github\gitactiontutorials\src\TestOnlineProject.Application\bin\Debug\net6.0\TestOnlineProject.Domain.dll
+C:\Users\ADMIN\OneDrive - Orient Software Development Corporation\Desktop\github\gitactiontutorials\src\TestOnlineProject.Application\bin\Debug\net6.0\TestOnlineProject.Infrastructure.dll
+C:\Users\ADMIN\OneDrive - Orient Software Development Corporation\Desktop\github\gitactiontutorials\src\TestOnlineProject.Application\bin\Debug\net6.0\TestOnlineProject.Domain.pdb
+C:\Users\ADMIN\OneDrive - Orient Software Development Corporation\Desktop\github\gitactiontutorials\src\TestOnlineProject.Application\bin\Debug\net6.0\TestOnlineProject.Infrastructure.pdb
+C:\Users\ADMIN\OneDrive - Orient Software Development Corporation\Desktop\github\gitactiontutorials\src\TestOnlineProject.Application\obj\Debug\net6.0\TestOnlineProject.Application.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive - Orient Software Development Corporation\Desktop\github\gitactiontutorials\src\TestOnlineProject.Application\obj\Debug\net6.0\TestOnlineProject.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\OneDrive - Orient Software Development Corporation\Desktop\github\gitactiontutorials\src\TestOnlineProject.Application\obj\Debug\net6.0\TestOnlineProject.Application.AssemblyInfoInputs.cache
+C:\Users\ADMIN\OneDrive - Orient Software Development Corporation\Desktop\github\gitactiontutorials\src\TestOnlineProject.Application\obj\Debug\net6.0\TestOnlineProject.Application.AssemblyInfo.cs
+C:\Users\ADMIN\OneDrive - Orient Software Development Corporation\Desktop\github\gitactiontutorials\src\TestOnlineProject.Application\obj\Debug\net6.0\TestOnlineProject.Application.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive - Orient Software Development Corporation\Desktop\github\gitactiontutorials\src\TestOnlineProject.Application\obj\Debug\net6.0\TestOnlineProject.Application.csproj.CopyComplete
+C:\Users\ADMIN\OneDrive - Orient Software Development Corporation\Desktop\github\gitactiontutorials\src\TestOnlineProject.Application\obj\Debug\net6.0\TestOnlineProject.Application.dll
+C:\Users\ADMIN\OneDrive - Orient Software Development Corporation\Desktop\github\gitactiontutorials\src\TestOnlineProject.Application\obj\Debug\net6.0\refint\TestOnlineProject.Application.dll
+C:\Users\ADMIN\OneDrive - Orient Software Development Corporation\Desktop\github\gitactiontutorials\src\TestOnlineProject.Application\obj\Debug\net6.0\TestOnlineProject.Application.pdb
+C:\Users\ADMIN\OneDrive - Orient Software Development Corporation\Desktop\github\gitactiontutorials\src\TestOnlineProject.Application\obj\Debug\net6.0\ref\TestOnlineProject.Application.dll

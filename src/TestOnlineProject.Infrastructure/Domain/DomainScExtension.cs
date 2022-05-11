@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using TestOnlineProject.Domain.Aggregates.ExamAggregate;
+using TestOnlineProject.Domain.Aggregates.QuestionAggregate;
 using TestOnlineProject.Domain.Aggregates.RoleAggregate;
 using TestOnlineProject.Domain.Aggregates.UserAggregate;
 using TestOnlineProject.Domain.SeedWork;
@@ -21,6 +23,8 @@ namespace TestOnlineProject.Infrastructure.Domain
             services.AddScoped<IUnitOfWork>(sp => new UnitOfWork((sp.GetRequiredService<AppDbContext>())));
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IRoleRepository, RoleRepository>();
+            services.AddScoped<IQuestionRepository, QuestionRepository>();
+            services.AddScoped<IExamRepository, ExamRepository>();
 
             var serviceProvider = services.BuildServiceProvider();
             using (var scope = serviceProvider.CreateScope())

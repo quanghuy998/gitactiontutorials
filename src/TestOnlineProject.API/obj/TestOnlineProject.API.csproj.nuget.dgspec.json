@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.API\\TestOnlineProject.API.csproj": {}
+    "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.API\\TestOnlineProject.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.API\\TestOnlineProject.API.csproj": {
+    "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.API\\TestOnlineProject.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.API\\TestOnlineProject.API.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.API\\TestOnlineProject.API.csproj",
         "projectName": "TestOnlineProject.API",
-        "projectPath": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.API\\TestOnlineProject.API.csproj",
-        "packagesPath": "C:\\Users\\huy.huynhducquang\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.API\\obj\\",
+        "projectPath": "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.API\\TestOnlineProject.API.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\huy.huynhducquang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Application\\TestOnlineProject.Application.csproj": {
-                "projectPath": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Application\\TestOnlineProject.Application.csproj"
+              "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Application\\TestOnlineProject.Application.csproj": {
+                "projectPath": "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Application\\TestOnlineProject.Application.csproj"
               }
             }
           }
@@ -75,21 +75,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Application\\TestOnlineProject.Application.csproj": {
+    "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Application\\TestOnlineProject.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Application\\TestOnlineProject.Application.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Application\\TestOnlineProject.Application.csproj",
         "projectName": "TestOnlineProject.Application",
-        "projectPath": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Application\\TestOnlineProject.Application.csproj",
-        "packagesPath": "C:\\Users\\huy.huynhducquang\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Application\\obj\\",
+        "projectPath": "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Application\\TestOnlineProject.Application.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\huy.huynhducquang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,11 +103,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Domain\\TestOnlineProject.Domain.csproj": {
-                "projectPath": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Domain\\TestOnlineProject.Domain.csproj"
+              "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Domain\\TestOnlineProject.Domain.csproj": {
+                "projectPath": "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Domain\\TestOnlineProject.Domain.csproj"
               },
-              "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Infrastructure\\TestOnlineProject.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Infrastructure\\TestOnlineProject.Infrastructure.csproj"
+              "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Infrastructure\\TestOnlineProject.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Infrastructure\\TestOnlineProject.Infrastructure.csproj"
               }
             }
           }
@@ -136,21 +136,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Domain\\TestOnlineProject.Domain.csproj": {
+    "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Domain\\TestOnlineProject.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Domain\\TestOnlineProject.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Domain\\TestOnlineProject.Domain.csproj",
         "projectName": "TestOnlineProject.Domain",
-        "projectPath": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Domain\\TestOnlineProject.Domain.csproj",
-        "packagesPath": "C:\\Users\\huy.huynhducquang\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Domain\\obj\\",
+        "projectPath": "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Domain\\TestOnlineProject.Domain.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\huy.huynhducquang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -190,21 +190,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Infrastructure\\TestOnlineProject.Infrastructure.csproj": {
+    "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Infrastructure\\TestOnlineProject.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Infrastructure\\TestOnlineProject.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Infrastructure\\TestOnlineProject.Infrastructure.csproj",
         "projectName": "TestOnlineProject.Infrastructure",
-        "projectPath": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Infrastructure\\TestOnlineProject.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\huy.huynhducquang\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Infrastructure\\TestOnlineProject.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\huy.huynhducquang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -218,8 +218,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Domain\\TestOnlineProject.Domain.csproj": {
-                "projectPath": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Domain\\TestOnlineProject.Domain.csproj"
+              "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Domain\\TestOnlineProject.Domain.csproj": {
+                "projectPath": "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Domain\\TestOnlineProject.Domain.csproj"
               }
             }
           }
@@ -266,7 +266,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

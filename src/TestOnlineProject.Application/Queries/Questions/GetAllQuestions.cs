@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TestOnlineProject.Domain.Aggregates.QuestionAggregate;
-using TestOnlineProject.Infrastructure.CQRS.Commands;
+﻿using TestOnlineProject.Domain.Aggregates.QuestionAggregate;
 using TestOnlineProject.Infrastructure.CQRS.Queries;
 
 namespace TestOnlineProject.Application.Queries.Questions

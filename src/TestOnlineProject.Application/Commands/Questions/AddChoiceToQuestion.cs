@@ -1,12 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TestOnlineProject.Domain.Aggregates.QuestionAggregate;
+using TestOnlineProject.Infrastructure.CQRS.Commands;
 
 namespace TestOnlineProject.Application.Commands.Questions
 {
-    internal class AddChoiceToQuestion
+    public class AddChoiceToQuestionCommand : ICommand
     {
+        public Guid QuestionId { get; init; }
+        public string ChoiceText { get; init; }
+        public bool IsCorrect { get; init; }
+    }
+
+    public class AddChoiceToQuestionHandler : ICommandHandler<AddChoiceToQuestionCommand>
+    {
+        private readonly IQuestionRepository _questionRepository;
+
+        public AddChoiceToQuestionHandler(IQuestionRepository questionRepository)
+        {
+            _questionRepository = questionRepository;
+        }
+
+        public async Task<CommandResult> Handle(AddChoiceToQuestionCommand request, CancellationToken cancellationToken)
+        {
+            var choice = new Choice(request.ChoiceText, request.IsCorrect);
+            var question = await _questionRepository.FindOneAsync(request.QuestionId, cancellationToken);
+            if (question is null) return CommandResult.Error("Question does not exist.");
+
+            if (question.QuestionType == QuestionType.MultipChoice)
+            {
+                question.AddChoiceToQuestion(choice);
+            }
+            await _questionRepository.SaveAsync(question, cancellationToken);
+
+            return CommandResult.Success();
+        }
     }
 }

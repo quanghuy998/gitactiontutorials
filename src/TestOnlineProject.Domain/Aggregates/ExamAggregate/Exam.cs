@@ -30,12 +30,14 @@ namespace TestOnlineProject.Domain.Aggregates.ExamAggregate
         public void AddQuestion(Question request)
         {
             Questions.Add(request);
+            ModifiedDate = DateTime.Now;
         }
 
         public void RemoveQuestion(Guid questionId)
         {
             var question = Questions.Find(x => x.Id == questionId);
             Questions.Remove(question);
+            ModifiedDate = DateTime.Now;
         }
     }
 }
