@@ -35,14 +35,6 @@ jobs:
       run: dotnet test
       working-directory: tests/TestOnlineProject.Test
 
-    - name: Build and push Docker image
-      uses: docker/build-push-action@v1.1.0
-      with:
-        username: ${{ secrets.REGISTRY_USERNAME }}
-        password: ${{ secrets.REGISTRY_PASSWORD }}
-        # registry: ${{ secrets.REGISTRY_LOGIN_SERVER }}
-        path: .
-        dockerfile: 'src/docker-compose.dcproj'
-        repository: 'getting-started'
-        tags: 'linux-latest'
-        push: true
+    - name: Start containers
+      working-directory: src/docker-compose.yml
+      run: docker-compose up -d
