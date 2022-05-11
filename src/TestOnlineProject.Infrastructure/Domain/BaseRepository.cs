@@ -3,7 +3,7 @@ using TestOnlineProject.Domain.SeedWork;
 
 namespace TestOnlineProject.Infrastructure.Domain
 {
-    public abstract class BaseRepository<TAggregateRoot, TId> : IBaseRepository<TAggregateRoot, TId>
+    public abstract class BaseRepository<TAggregateRoot, TId> : IRepository<TAggregateRoot, TId>
                     where TAggregateRoot : AggregateRoot<TId>
     {
         protected DbContext DbContext { get; }

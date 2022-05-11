@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TestOnlineProject.Domain.Aggregates.ExamAggregate;
 using TestOnlineProject.Domain.SeedWork;
 
-namespace TestOnlineProject.Domain.Aggregates.ExamAggregate
+namespace TestOnlineProject.Domain.Aggregates.QuestionAggregate
 {
-    public class Question : Entity<Guid>
+    public class Question : AggregateRoot<Guid>
     {
         public string QuestionText { get; }
         public int Point { get; }
         public QuestionType QuestionType { get; }
         List<Choice> Choices { get; }
+        List<Exam> Exams { get; }
 
         private Question()
         {
@@ -25,6 +22,7 @@ namespace TestOnlineProject.Domain.Aggregates.ExamAggregate
             QuestionType = questionType;
             Point = point;
             Choices = new();
+            Exams = new();
         }
 
         public void AddChoice(Choice choice)

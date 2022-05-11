@@ -1,4 +1,5 @@
 version: '3.4'
+
 services:
   sqlserver:
     image: "mcr.microsoft.com/mssql/server:2019-CU15-ubuntu-20.04"
@@ -6,9 +7,9 @@ services:
     ports:
       - 1433:1433
     environment:
-     ACCEPT_EULA: "Y"
-     SA_PASSWORD: "Your_password123"
-     MSSQL_PID: Express
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Your_password123"
+      MSSQL_PID: Express
   testonlineproject.api:
     image: ${DOCKER_REGISTRY-}testonlineprojectapi
     container_name: testonlineprojectapi

@@ -1,6 +1,6 @@
 ﻿namespace TestOnlineProject.Domain.SeedWork
 {
-    public interface IBaseRepository<TAggregateRoot, TId> where TAggregateRoot : AggregateRoot<TId>
+    public interface IRepository<TAggregateRoot, TId> where TAggregateRoot : AggregateRoot<TId>
     {
         Task<bool> ExistsAsync(TId id, CancellationToken cancellationToken = default);
         

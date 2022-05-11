@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>5c7fac68-e945-4521-ae2d-5b532a38c426</ProjectGuid>
+    <ProjectGuid>fd1fc73e-8f8c-4611-96ff-1eaec102fd15</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>testonlineproject.api</DockerServiceName>

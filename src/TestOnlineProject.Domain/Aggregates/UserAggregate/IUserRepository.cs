@@ -2,7 +2,7 @@
 
 namespace TestOnlineProject.Domain.Aggregates.UserAggregate
 {
-    public interface IUserRepository : IBaseRepository<User, Guid>
+    public interface IUserRepository : IRepository<User, Guid>
     {
     }
 }
