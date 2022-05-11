@@ -3,8 +3,7 @@ name: dotnet package
 on: [push]
 
 jobs:
-  build:
-    name: Dotnet Side by Side testing sample
+  build-project:
     runs-on: ubuntu-latest
     steps:
       - name: Check out branch main
