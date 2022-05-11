@@ -16,10 +16,13 @@ jobs:
           dotnet-version: 6.0.x
 
       - name: Install dependencies
+        working-directory: src/TestOnlineProject.API
         run: dotnet restore
 
       - name: Build
+        working-directory: src/TestOnlineProject.API
         run: dotnet build --configuration Release --no-restore
 
       - name: Test
+      working-directory: tests/TestOnlineProject.Test
         run: dotnet test --no-restore --verbosity normal
