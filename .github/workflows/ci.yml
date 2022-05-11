@@ -40,7 +40,10 @@ jobs:
     # Execute all unit tests in the solution
     - name: Execute unit tests
       run: dotnet test
-
+      env:
+        DOTNET_CLI_TELEMETRY_OPTOUT: true
+        DOTNET_NOLOGO: true
+        
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application
       run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
