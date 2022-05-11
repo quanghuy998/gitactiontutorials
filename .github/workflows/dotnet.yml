@@ -2,12 +2,12 @@ name: CI work flow
 
 on:
   push:
-    paths:
-      - 'src/**'
-      - 'tests/**'
-    branches: [ dev ]
+    # paths:
+    #   - 'src/**'
+    #   - 'tests/**'
+    # branches: [ dev ]
   pull_request:
-    branches: [ dev ]
+    # branches: [ dev ]
 
 jobs:
   build:
