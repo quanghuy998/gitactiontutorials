@@ -8,6 +8,7 @@ namespace TestOnlineProject.Application.Commands.Questions
         public string QuestionText { get; init; }
         public QuestionType QuestionType { get; init; }
         public int Point { get; init; }
+        public int TimeLimit { get; init; }
     }
 
     public class CreateQuestionCommandHandler : ICommandHandler<CreateQuestionCommand>
@@ -21,7 +22,7 @@ namespace TestOnlineProject.Application.Commands.Questions
 
         public async Task<CommandResult> Handle(CreateQuestionCommand request, CancellationToken cancellationToken)
         {
-            var question = new Question(request.QuestionText, request.Point, request.QuestionType);
+            var question = new Question(request.QuestionText, request.Point, request.TimeLimit, request.QuestionType);
             await _questionRepository.AddAsync(question, cancellationToken);
 
             return CommandResult.Success();

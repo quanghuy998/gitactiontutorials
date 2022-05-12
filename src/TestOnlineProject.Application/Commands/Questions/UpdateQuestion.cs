@@ -9,6 +9,7 @@ namespace TestOnlineProject.Application.Commands.Questions
         public string QuestionText { get; init; }
         public QuestionType QuestionType { get; init; }
         public int Point { get; init; }
+        public int TimeLimit { get; private set; }
     }
 
     public class UpdateQuestionCommandHandler : ICommandHandler<UpdateQuestionCommand>
@@ -25,7 +26,7 @@ namespace TestOnlineProject.Application.Commands.Questions
             var question = await _questionRepository.FindOneAsync(request.QuestionId, cancellationToken);
             if (question is null) return CommandResult.Error("The question does not exist.");
 
-            question.UpdateQuestion(request.QuestionText, request.QuestionType, request.Point);
+            question.UpdateQuestion(request.QuestionText, request.QuestionType, request.Point, request.TimeLimit);
             await _questionRepository.SaveAsync(question, cancellationToken);
 
             return CommandResult.Success();

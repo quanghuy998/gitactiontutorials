@@ -15,7 +15,6 @@ namespace TestOnlineProject.Infrastructure.Database
 
         public AppDbContext(DbContextOptions options) : base(options)
         {
-            Database.EnsureDeleted();
             Database.EnsureCreated();
         }
 

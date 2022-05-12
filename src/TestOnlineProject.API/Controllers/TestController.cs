@@ -58,7 +58,8 @@ namespace TestOnlineProject.API.Controllers
             var command = new UpdateTestCommand()
             {
                 Id = id,
-                Title = request.title
+                Title = request.title,
+                IsPublish = request.isPublish
             };
 
             var result = await _commandBus.SendAsync(command, cancellationToken);

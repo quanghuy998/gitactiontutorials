@@ -26,8 +26,8 @@ namespace TestOnlineProject.Application.Commands.Questions
 
             var choice = question.Choices.Find(x => x.Id == request.ChoiceId);
             if (choice is null) return CommandResult.Error("The choice does not exist in this question.");
+            choice.UpdateChoice(request.ChoiceText, request.IsCorrect);
 
-            question.UpdateQuestion(question.QuestionText, question.QuestionType, question.Point);
             await _questionRepository.SaveAsync(question, cancellationToken);
 
             return CommandResult.Success();

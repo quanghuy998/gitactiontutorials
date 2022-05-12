@@ -7,6 +7,7 @@ namespace TestOnlineProject.Domain.Aggregates.TestAggregate
     {
         public string Title { get; private set; }
         public DateTime ModifiedDate { get; private set; }
+        public bool IsPublish { get; private set; }
         public List<Question> Questions { get; }
 
         private Test()
@@ -18,12 +19,14 @@ namespace TestOnlineProject.Domain.Aggregates.TestAggregate
         {
             Title = title;
             ModifiedDate = DateTime.Now;
+            IsPublish = false;
             Questions = new();
         }
 
-        public void UpdateTest(string title)
+        public void UpdateTest(string title, bool isPublish)
         {
             Title = title;
+            IsPublish = isPublish;
             ModifiedDate = DateTime.Now;
         }
 

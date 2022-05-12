@@ -3,6 +3,6 @@
     public class TestRequest
     {
         public record CreateTestRequest(string title);
-        public record UpdateTestRequest(string title);
+        public record UpdateTestRequest(string title, bool isPublish);
     }
 }

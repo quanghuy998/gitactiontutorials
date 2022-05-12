@@ -13,6 +13,7 @@ namespace TestOnlineProject.Infrastructure.Database.EntityTypeConfiguration
             builder.HasMany(p => p.Questions).WithMany(p => p.Tests);
 
             builder.Property(p => p.Title).HasColumnName("Title");
+            builder.Property(p => p.IsPublish).HasColumnName("IsPublish");
             builder.Property(p => p.ModifiedDate).HasColumnName("ModifiedDate");
         }
     }

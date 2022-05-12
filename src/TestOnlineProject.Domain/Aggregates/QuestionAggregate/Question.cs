@@ -6,8 +6,9 @@ namespace TestOnlineProject.Domain.Aggregates.QuestionAggregate
     public class Question : AggregateRoot<Guid>
     {
         public string QuestionText { get; private set; }
-        public QuestionType QuestionType { get; private set; }
         public int Point { get; private set; }
+        public int TimeLimit { get; private set; }
+        public QuestionType QuestionType { get; private set; }
         public List<Choice> Choices { get; }
         public List<Test> Tests { get; }
 
@@ -16,20 +17,22 @@ namespace TestOnlineProject.Domain.Aggregates.QuestionAggregate
 
         }
 
-        public Question(string questionTest, int point, QuestionType questionType)
+        public Question(string questionTest, int point, int timeLitmit, QuestionType questionType)
         {
             QuestionText = questionTest;
-            QuestionType = questionType;
             Point = point;
+            TimeLimit = timeLitmit;
+            QuestionType = questionType;
             Choices = new();
             Tests = new();
         }
 
-        public void UpdateQuestion(string questionText, QuestionType questionType, int point)
+        public void UpdateQuestion(string questionText, QuestionType questionType, int point, int timeLitmit)
         {
             QuestionText = questionText;
             QuestionType = questionType;
             Point = point;
+            TimeLimit = timeLitmit;
         }
 
         public void AddChoiceToQuestion(Choice request)
