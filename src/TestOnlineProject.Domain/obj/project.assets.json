@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
+    "C:\\Users\\huy.huynhducquang\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Domain\\TestOnlineProject.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Domain\\TestOnlineProject.Domain.csproj",
       "projectName": "TestOnlineProject.Domain",
-      "projectPath": "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Domain\\TestOnlineProject.Domain.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADMIN\\OneDrive - Orient Software Development Corporation\\Desktop\\github\\gitactiontutorials\\src\\TestOnlineProject.Domain\\obj\\",
+      "projectPath": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Domain\\TestOnlineProject.Domain.csproj",
+      "packagesPath": "C:\\Users\\huy.huynhducquang\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\huy.huynhducquang\\Desktop\\GitHub\\gitactiontutorials\\src\\TestOnlineProject.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\huy.huynhducquang\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

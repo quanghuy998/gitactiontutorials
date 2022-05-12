@@ -23,7 +23,7 @@ namespace TestOnlineProject.Application.Commands.Questions
         public async Task<CommandResult> Handle(UpdateQuestionCommand request, CancellationToken cancellationToken)
         {
             var question = await _questionRepository.FindOneAsync(request.QuestionId, cancellationToken);
-            if (question is null) return CommandResult.Error("Question does not exist.");
+            if (question is null) return CommandResult.Error("The question does not exist.");
 
             question.UpdateQuestion(request.QuestionText, request.QuestionType, request.Point);
             await _questionRepository.SaveAsync(question, cancellationToken);

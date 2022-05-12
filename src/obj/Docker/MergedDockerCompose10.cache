@@ -1,0 +1,30 @@
+services:
+  sqlserver:
+    container_name: sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Express
+      SA_PASSWORD: Your_password123
+    image: mcr.microsoft.com/mssql/server:2019-CU15-ubuntu-20.04
+    ports:
+    - published: 1433
+      target: 1433
+  testonlineproject.api:
+    build:
+      context: C:\Users\huy.huynhducquang\Desktop\GitHub\gitactiontutorials\src
+      dockerfile: TestOnlineProject.API/Dockerfile
+    container_name: testonlineprojectapi
+    depends_on:
+      sqlserver:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: testonlineprojectapi
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\huy.huynhducquang\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\huy.huynhducquang\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

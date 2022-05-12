@@ -22,12 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\TestOnlineProject.API\TestOnlineProject.API.csproj" />
     <ProjectReference Include="..\..\src\TestOnlineProject.Application\TestOnlineProject.Application.csproj" />
     <ProjectReference Include="..\..\src\TestOnlineProject.Domain\TestOnlineProject.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ApiTest\" />
   </ItemGroup>
 
 </Project>

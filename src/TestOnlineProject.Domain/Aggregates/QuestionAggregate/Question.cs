@@ -1,4 +1,4 @@
-﻿using TestOnlineProject.Domain.Aggregates.ExamAggregate;
+﻿using TestOnlineProject.Domain.Aggregates.TestAggregate;
 using TestOnlineProject.Domain.SeedWork;
 
 namespace TestOnlineProject.Domain.Aggregates.QuestionAggregate
@@ -9,7 +9,7 @@ namespace TestOnlineProject.Domain.Aggregates.QuestionAggregate
         public QuestionType QuestionType { get; private set; }
         public int Point { get; private set; }
         public List<Choice> Choices { get; }
-        public List<Exam> Exams { get; }
+        public List<Test> Tests { get; }
 
         private Question()
         {
@@ -22,7 +22,7 @@ namespace TestOnlineProject.Domain.Aggregates.QuestionAggregate
             QuestionType = questionType;
             Point = point;
             Choices = new();
-            Exams = new();
+            Tests = new();
         }
 
         public void UpdateQuestion(string questionText, QuestionType questionType, int point)

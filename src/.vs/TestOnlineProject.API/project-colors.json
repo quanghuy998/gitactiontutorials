@@ -55,7 +55,12 @@
       "ProjectGuid": "fd1fc73e-8f8c-4611-96ff-1eaec102fd15",
       "DisplayName": "docker-compose",
       "ColorIndex": 9
+    },
+    "96c691de-e7c1-46db-a6f8-1ae3c6bca638": {
+      "ProjectGuid": "96c691de-e7c1-46db-a6f8-1ae3c6bca638",
+      "DisplayName": "TestOnineProejct.UnitTest",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 10
+  "NextColorIndex": 11
 }

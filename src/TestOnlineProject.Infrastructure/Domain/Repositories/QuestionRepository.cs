@@ -15,7 +15,7 @@ namespace TestOnlineProject.Infrastructure.Domain.Repositories
         {
             var spec = new BaseSpecification<Question>(x => x.Id == id);
             spec.Includes.Add(x => x.Choices);
-            spec.Includes.Add(x => x.Exams);
+            spec.Includes.Add(x => x.Tests);
 
             return FindOneAsync(spec, cancellationToken);
         }

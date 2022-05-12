@@ -17,7 +17,7 @@ namespace TestOnineProejct.UnitTest.DomainTest
             Assert.Equal(questionText, question.QuestionText);
             Assert.Equal(QuestionType.MultipChoice, question.QuestionType);
             Assert.Empty(question.Choices);
-            Assert.Empty(question.Exams);
+            Assert.Empty(question.Tests);
         }
 
         [Fact]

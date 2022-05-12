@@ -20,7 +20,7 @@ namespace TestOnlineProject.Application.Commands.Questions
         public async Task<CommandResult> Handle(DeleteQuestionCommand request, CancellationToken cancellationToken)
         {
             var question = await _questionRepository.FindOneAsync(request.Id, cancellationToken);
-            if (question is null) return CommandResult.Error("Question does not exist.");
+            if (question is null) return CommandResult.Error("The question does not exist.");
 
             await _questionRepository.DeleteAsync(question, cancellationToken);
             return CommandResult.Success();
